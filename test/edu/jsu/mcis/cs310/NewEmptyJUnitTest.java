@@ -39,8 +39,10 @@ public class NewEmptyJUnitTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    @Test
-    public void testAlwaysPasses() {
-    assertTrue(true);
-    }
+   @Test
+    public void testReverseCustomString() {
+    String input = "CS310";
+    String expected = "013SC";
+    assertEquals(expected, Main.reverse(input));
+}
 }
